@@ -1,9 +1,9 @@
+// 2021/4/23
+// Delta
+
 #include <bits/stdc++.h>
 
 using namespace std;
-#define debug(x) std::cout << #x << " is " << (x) << '\n'
-using ll  = long long;
-using ull = unsigned long long;
 
 signed main(void)
 {

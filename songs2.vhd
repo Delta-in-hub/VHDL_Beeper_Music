@@ -1,3 +1,5 @@
+-- 2021/4/23
+-- Delta
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
@@ -39,7 +41,7 @@ ARCHITECTURE main OF songs2 IS
 	CONSTANT H7 : INTEGER := 12655;
 
 	SIGNAL beep1 : STD_LOGIC := '0';
-	SIGNAL TIME : INTEGER := 12500000; --250ms  6250000 125ms 9375000 
+	SIGNAL TIME : INTEGER := 12500000; --250ms  6250000 125ms 9375000
 	SIGNAL LASTSTATE : INTEGER := 63;
 	SIGNAL which : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00";
 	SIGNAL state : STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -267,6 +269,9 @@ BEGIN
 							WHEN 73 => count_end <= conv_std_logic_vector(M7, 17);
 							WHEN OTHERS => count_end <= count_end;
 						END CASE;
+-- 班级: 0f11c3d456166e750993853f1d47305373a9d90ec55b3fb71e4dbd76ad0fe95a41d88a694f51ea27badb22ba5d1e54b59e1308835cf62b506b6c2e7fec6bb168
+-- 学号: 6403c4eb8da69dc44dff1e006b7bf3a9adf8e25bb9699b31414b16ebff45ef1df85593d239b4a74fdd47f9255264f6112e0f72d8d0125da773dfef17ef07de94
+
 
 						-- 致爱丽丝
 					WHEN "10" =>
